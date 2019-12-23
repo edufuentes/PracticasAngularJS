@@ -17,34 +17,28 @@
 				<h4>en angularJS</h4>	
 
 				<p>
-					Su nombre: {{ nombre | uppercase }}
+					Nombre completo:
 					<br/>
 					<input class="form-control" type="text" ng-model="nombre" name="form-control" placeholder="Ingrese su nombre ">	
-				</p>							
-				<p>
-					Seleccione el País: {{ pais }}
-					<select class="form-control" ng-model="pais">
-						<option value="1">Costa Rica</option>
-						<option value="2">México</option>
-						<option value="3">Colombia</option>					
-					</select>				
 				</p>
 				<p>
-					Seleccione las opciones que desea: {{ opt1 }}  {{ opt2 }}
+					Lugar de trabajo:
 					<br/>
-					<input  type="checkbox" ng-model="opt1">Opción 1
+					<input class="form-control" type="text" ng-model="trabajo" name="form-control" placeholder="Ingrese su nombre ">
+				</p>
+				<p>
+					Salario en Dólares:
 					<br/>
-					<input  type="checkbox" ng-model="opt2">Opción 2
+					<input class="form-control" type="text" ng-model="salario" name="form-control" placeholder="Ingrese su nombre ">
 				</p>
 
 				<p>
-					Seleccione las opciones que desea: {{ genero }}  
+					Nombre: {{ nombre }}
 					<br/>
-					<input  type="radio" value="M" ng-model="genero">Opción 1
+					Lugar de Trabajo: {{ trabajo }}
 					<br/>
-					<input  type="radio" value="F" ng-model="genero">Opción 2
-				</p>
-
+					Con un salario de: {{ salario | currency }}
+				</p>				
 			</div>
 
 	</body>
